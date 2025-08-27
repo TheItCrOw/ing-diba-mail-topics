@@ -4,6 +4,17 @@
 
 This repository contains my solution for the **ING-DiBa Senior Data Scientist Coding Challenge**. The goal was to analyze and classify the topics of approximately **630 customer emails** by leveraging state-of-the-art **NLP techniques** and **visual analytics**.
 
+## In Medias Res
+
+| | |
+|---------|---------|
+| <img alt="image" src="https://github.com/user-attachments/assets/a95881dd-1662-4e7b-a17d-cfc29c3875a8" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/f7d907dd-7cdc-4750-8a09-bd887198d942" style="max-width:100%;"> |
+| **Search Portal** – Explore annotated emails with flexible full-text and semantic search | **Lexicon Overview** – Browse all annotations, entities, and topics |
+| <img alt="image" src="https://github.com/user-attachments/assets/ebea3922-090e-4fba-8ec5-e4fc2237f788" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/8ea556fc-ac09-4575-876e-74284a72ad09" style="max-width:100%;"> |
+| **Topic Insights** – A wiki-style overview of a topic and its distribution across all emails | **Corpus Topic Distribution** – Visual representation of topic proportions |
+| <img alt="image" src="https://github.com/user-attachments/assets/fd8900d8-bd2f-455e-ba93-b9accdbaf4d8" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/21570d5e-a997-4fc5-ab63-345c6c41a94c" style="max-width:100%;"> |
+| **Document Reader** – View individual emails with sentiment and emotion annotations highlighted | **Annotation Visualizations** – Rich data visualizations of extracted patterns |
+
 ---
 
 ## Project Overview
@@ -51,21 +62,10 @@ All raw and processed UIMA documents are stored under the [`data`](data) directo
 ## 🌐 Interactive Exploration with UCE
 
 <p align="center">
-  <img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/6aec71cf-5ee0-43d8-8308-fe544a13c46b" />
+  <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6aec71cf-5ee0-43d8-8308-fe544a13c46b" />
 </p>
 
-To make the analysis tangible and intuitive, I integrated the processed corpus into the [**Unified Corpus Explorer (UCE)**](https://github.com/texttechnologylab/UCE). This provides a fully featured web interface for navigating annotations, exploring topics, and visualizing patterns in the dataset.
-
-## In Medias Res
-
-| | |
-|---------|---------|
-| <img alt="image" src="https://github.com/user-attachments/assets/a95881dd-1662-4e7b-a17d-cfc29c3875a8" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/f7d907dd-7cdc-4750-8a09-bd887198d942" style="max-width:100%;"> |
-| **Search Portal** – Explore annotated emails with flexible full-text and semantic search | **Lexicon Overview** – Browse all annotations, entities, and topics |
-| <img alt="image" src="https://github.com/user-attachments/assets/ebea3922-090e-4fba-8ec5-e4fc2237f788" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/8ea556fc-ac09-4575-876e-74284a72ad09" style="max-width:100%;"> |
-| **Topic Insights** – A wiki-style overview of a topic and its distribution across all emails | **Corpus Topic Distribution** – Visual representation of topic proportions |
-| <img alt="image" src="https://github.com/user-attachments/assets/fd8900d8-bd2f-455e-ba93-b9accdbaf4d8" style="max-width:100%;"> | <img alt="image" src="https://github.com/user-attachments/assets/21570d5e-a997-4fc5-ab63-345c6c41a94c" style="max-width:100%;"> |
-| **Document Reader** – View individual emails with sentiment and emotion annotations highlighted | **Annotation Visualizations** – Rich data visualizations of extracted patterns |
+To make the analysis tangible and intuitive, I integrated the processed corpus into the [**Unified Corpus Explorer (UCE)**](https://github.com/texttechnologylab/UCE). This provides a fully featured web interface for navigating annotations, exploring topics, and visualizing patterns in the dataset, screenshots of which you find above.
 
 ---
 
