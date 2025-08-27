@@ -25,7 +25,7 @@ The workflow for processing and analyzing the emails was as follows:
 - Experimented with hyperparameter tuning due to the small dataset size (~630 emails).  
 - The trained model is published on Hugging Face: [**bertopic-german-mails-small**](https://huggingface.co/TheItCrOw/bertopic-german-mails-small)
 
-> For details, see [`python/BERTopic.ipynb`](python/BERTopic.ipynb).
+> For details, see [`python/BERTopic.ipynb`](python/bertopic.ipynb).
 
 ---
 
