@@ -2,12 +2,11 @@
 
 <img width="2680" height="500" alt="image" src="https://github.com/user-attachments/assets/799f3a60-e012-4af9-a681-0e6661bb382d" />
 
-This repository contains my solution for the **ING-DiBa Senior Data Scientist Coding Challenge**.  
-The goal was to analyze and classify the topics of approximately **630 customer emails** by leveraging state-of-the-art **NLP techniques** and **visual analytics**.
+This repository contains my solution for the **ING-DiBa Senior Data Scientist Coding Challenge**. The goal was to analyze and classify the topics of approximately **630 customer emails** by leveraging state-of-the-art **NLP techniques** and **visual analytics**.
 
 ---
 
-## 🧠 Project Overview
+## Project Overview
 
 For the challenge, I designed a complete **end-to-end NLP pipeline** capable of:
 - Discovering **latent topics** within the email corpus.
@@ -57,7 +56,7 @@ All raw and processed UIMA documents are stored under the [`data`](data) directo
 
 To make the analysis tangible and intuitive, I integrated the processed corpus into the [**Unified Corpus Explorer (UCE)**](https://github.com/texttechnologylab/UCE). This provides a fully featured web interface for navigating annotations, exploring topics, and visualizing patterns in the dataset.
 
-## 🔍 In Medias Res
+## In Medias Res
 
 | | |
 |---------|---------|
@@ -70,7 +69,7 @@ To make the analysis tangible and intuitive, I integrated the processed corpus i
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - **Python** (BERTopic, Transformers, spaCy)
 - **Docker DUUI** for modular NLP pipelines
