@@ -49,10 +49,10 @@ public class Main {
         var rootPath = args[0];
         var emailsCsvPath = Paths.get(rootPath, "emails.csv");
         var rawXmiOutput = Paths.get(rootPath, "xmi-raw");
-        var annotatedXmiOutput = Paths.get(rootPath, "xmi-annotated");
+        var annotatedXmiOutput = Paths.get(rootPath, "xmi-annotated/input");
 
         System.out.println("Trying to read in all mails and transforming them to UIMA XMIs...");
-        //writeEmailsAsXMI(emailsCsvPath.toString(), rawXmiOutput.toString());
+        writeEmailsAsXMI(emailsCsvPath.toString(), rawXmiOutput.toString());
         System.out.println("Done!");
 
         System.out.println("Running the DUUI Pipeline now...");
@@ -80,9 +80,6 @@ public class Main {
 
         composer.add(
                 new DUUIDockerDriver.Component("docker.texttechnologylab.org/duui-spacy-de_core_news_sm:latest")
-                        //.withParameter("spacy_language", "de, en")
-                        //.withParameter("spacy_model", "de_core_news_sm, en_core_web_sm")
-                        //.withParameter("spacy_model_size", "sm")
                         .withName("duui-spacy")
                         //.withImageFetching()
                         .withGPU(false)
@@ -95,7 +92,7 @@ public class Main {
                         .withParameter("selection", "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence")
         );
 
-        /*composer.add(
+        composer.add(
                 new DUUIDockerDriver.Component("docker.texttechnologylab.org/duui-transformers-sentiment-atomar-twitter-xlm-roberta-base-sentiment:latest")
                         .withParameter("selection", "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence")
                         .withParameter("timeout", "900")
@@ -107,7 +104,7 @@ public class Main {
                         .withImageFetching()
                         .withParameter("timeout", "900")
                         .withParameter("selection", "de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Sentence")
-        );*/
+        );
 
         composer.add(
                 new DUUIUIMADriver.Component(

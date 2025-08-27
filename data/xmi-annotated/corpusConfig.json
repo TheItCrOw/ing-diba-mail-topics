@@ -1,0 +1,41 @@
+{
+  "name": "ING DiBa Mails",
+  "author": "ING DiBa",
+  "language": "de-DE",
+  "description": "Ein kleiner Korpus bestehend aus Helpdesk-Mails.",
+  "addToExistingCorpus": true,
+
+  "annotations": {
+	  "annotatorMetadata": false,
+
+    "OCRPage": false,
+    "OCRParagraph": false,
+    "OCRBlock": false,
+    "OCRLine": false,
+
+    "srLink": false,
+    "lemma": true,
+    "namedEntity": true,
+    "sentiment": true,
+    "emotion": true,
+    "geoNames": false,
+    "sentence": true,
+    "taxon": {
+      "annotated": false,
+      "//comment": "[Are the taxons annotated with biofid onthologies through the 'identifier' property?]",
+      "biofidOnthologyAnnotated": false
+    },
+    "time": false,
+    "wikipediaLink": false,
+    "unifiedTopic": true
+  },
+  "other": {
+    "//comment": "[Is this corpus also available on https://sammlungen.ub.uni-frankfurt.de/? Either true or false]",
+    "availableOnFrankfurtUniversityCollection": false,
+
+    "includeTopicDistribution": false,
+    "enableEmbeddings": false,
+    "enableRAGBot": false,
+    "enableS3Storage": false
+  }
+}
